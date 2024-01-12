@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #00BFFF;
+}
+
+.conatiner {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.MainBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image,
+.content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.Select-Time {
+    margin-top: 20px;
+    /* border: 1px solid black; */
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+
+select {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 90px;
+    font-size: 15px;
+    color: aliceblue;
+    font-weight: 700;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+
+button {
+    background-color: #0095ff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+    width: 100px;
+    font-weight: 700;
+    height: 40px;
+}
+
+button:hover,
+button:focus {
+    background-color: #07c;
+}
+
+button:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+button:active {
+    background-color: #0064bd;
+    box-shadow: none;
+}
+
+.disable{
+    pointer-events: none;
+    opacity: 0.3;
+   
+}
+
+
+@media screen and (max-width:767px) {
+
+    .conatiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 90%;
+        width: 90%;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: white;
+    }
+    .MainBox {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Select-Time{
+        margin-top:10px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        row-gap: 10px;
+       
+    }
+    select {
+        border: none;
+        outline: none;
+        height: 40px;
+        width:100%;
+        font-size: 15px;
+        color: aliceblue;
+        font-weight: 700;
+        background-color: orange;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .Btn{
+        width: 100%;
+    }
+    button{
+        width:100%;
+        height: 40px;
+        border-radius: 10px;
+    }
+ 
+
+}
