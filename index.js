@@ -49,6 +49,7 @@ setInterval(() => {
 
     if (H > 12) {
         H = H - 12;
+         H = H < 10 ? "0" + H : H;
         AM_PM_s = "PM";
     } else {
         AM_PM_s = "AM";
